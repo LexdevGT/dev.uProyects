@@ -1,0 +1,13 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.carousel img{
+    max-height: 600px;
+    object-fit: cover;
+}
+
+footer{
+    height: 50vh;
+}
