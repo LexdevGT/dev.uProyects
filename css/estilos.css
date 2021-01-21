@@ -9,7 +9,7 @@
 }
 
 footer{
-    height: 50vh;
+    height: 100%;
 }
 
 /* estilos del login  */
@@ -50,6 +50,51 @@ footer{
         height: 25px;
     }
   }
+
+
+/* estilos main    */
+.prueba{
+    height: 85vh;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+
+}
+
+aside{
+    position: absolute;
+    z-index: 2;
+}
+
+#bars{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+
+.lista_menu{
+    list-style-type: none;
+    font-size: 1.2rem;
+   
+}
+
+.lista_menu a{
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+}
+
+.lista_menu li:hover{
+    background-color:#f8c838;
+    
+}
+
+.lista_menu li:hover a{
+    color:#000;
+    
+}
+
+/* #footer_main{
+    height: auto;
+   
+} */
 
 
 
