@@ -1,65 +1,34 @@
+/* estilos main    */
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    box-sizing: border-box;
 }
 
-.carousel img{
-    max-height: 600px;
-    object-fit: cover;
-}
-
-footer{
-    height: 100%;
-}
-
-/* estilos del login  */
-#bg-img{
-   
+html{
     height: 100vh;
-    background-image: url(../imgs/bglogisignup.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    
+    /* border: 1px solid black; */
 }
 
-.container-login{
-    background-color: rgba(35,47,62,.7);
-    /* height: 50vh; */
-    box-shadow: 1px 6px 6px 3px rgba(35,47,62,.8);
-    font-weight: 300;
-    
+body{
+    height: 100%;
+    /* border: 1px solid red; */
 }
 
-.container-login input{
-    border: none;
-    outline: none;
+header{
+    height: 10%;
 }
 
-.container-login a{
-    text-decoration: none;
-}
-
-
-
-/* estilos del signup */
-
-@media screen and (max-width: 480px) {
-    .img-media {
-        width: 50px;
-        height: 25px;
-    }
-  }
-
-
-/* estilos main    */
 .prueba{
-    height: 85vh;
+    height: 85%;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-
+    /* border: 1px solid red; */
 }
 
 aside{
+    /* width: auto; */
     position: absolute;
     z-index: 2;
 }
@@ -72,9 +41,11 @@ aside{
 
 .lista_menu{
     list-style-type: none;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
    
 }
+
+
 
 .lista_menu a{
     text-decoration: none;
@@ -91,10 +62,42 @@ aside{
     
 }
 
-/* #footer_main{
-    height: auto;
-   
-} */
+footer{
+    height: 5%;
+}
 
 
+@media (max-width: 575px){
+    
+    /* aside{
+        width: 60%;
+        
+    } */
 
+
+    .justify-content-xs-center{
+        
+        justify-content: center;
+    }
+
+    .d-xs-logo{
+       width: 30%;
+    }
+
+    .d-xs{
+        width: 70%;
+     }
+
+    }
+/* 
+    @media (min-width: 576px) and (max-width: 767px){
+        aside{
+            width: 40%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px){
+        aside{
+            width: auto;
+        }
+    } */

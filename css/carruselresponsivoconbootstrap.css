@@ -1,0 +1,32 @@
+html{
+    height: 100vh;
+    border: 2px dashed black;
+}
+
+body{
+    height: 100%;
+    border: solid 2px red;
+}
+
+.carousel{
+    border: solid green 3px;
+    height: 80%;
+}
+
+.carousel-inner{
+    width: 100%;
+    height: 100%;
+    border: darkblue dashed 3px;
+}
+
+.carousel-item{
+    border: solid 2px yellow;
+    height: 100%;
+    width: 100%;
+}
+
+.slide_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 

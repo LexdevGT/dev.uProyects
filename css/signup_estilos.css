@@ -1,0 +1,40 @@
+
+#bg-img{
+   
+    height: 100vh;
+    background-image: url(../imgs/bglogisignup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.img-media{
+    width: 75px;
+    height: 35px;
+}
+
+.container-signup{
+    background-color: rgba(35,47,62,.7);
+    /* height: 50vh; */
+    box-shadow: 1px 6px 6px 3px rgba(35,47,62,.8);
+    font-weight: 300;
+    width: 25%;
+}
+
+
+@media screen and (max-width: 575px) {
+    .container-signup {
+        width: 90%;
+        
+    }
+
+    .img-media{
+        width: 50px;
+        height: 25px;
+    }
+  }
+
+
+
+

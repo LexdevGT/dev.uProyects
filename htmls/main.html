@@ -19,27 +19,37 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">	
 
 	<!-- css -->
-	<link rel="stylesheet" href="/css/estilos.css">
+	<link rel="stylesheet" href="../css/estilos.css">
 
  
     <title>Loto Super 4</title>
     
     
 </head>
-<body class="bg-dark">
+<body>
 
 	<!-- inicia encabezado del index -->
 
-	<header class="container-fluid bg-warning d-flex justify-content-between py-3">
-		<div>
-			<!-- logotipp -->
-			<a href=""> <img class="rounded" src="/imgs/logo.jpg" width="100" height="50" alt=""> </a>
+	<header class="container-fluid bg-warning ">
+		<div class="row h-100" >
+			<div class="h-100 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-md-start  justify-content-xs-center d-xs-logo  " >
+				<img class="h-75  rounded" src="../imgs/logo.jpg"  alt="">
+			</div>
+
+			<!-- <div class="col-lg-6 col-md-6 col-sm-6 d-xs d-flex align-items-center justify-content-end ">
+				<div class="btn-xs">
+					<a class="btn btn-success " href="htmls/login.html">Ingresar</a>
+				</div>
+				<div class="ms-3 btn-xs">
+					<a class="btn btn-danger text-white" href="htmls/signup.html">Registrarse</a>
+				</div>
+
+			</div> -->
+
 		</div>
-			<!-- botones -->
-		<!-- <form class="align-self-center" >
-			<a class="btn btn-info  me-2" type="button" href="htmls/login.html">Ingresar</a>
-			<a class="btn btn-danger " type="button" href="htmls/signup.html">Registrarse</a>
-		</form> -->
+
+
+
 
 	</header>
 	<!-- finaliza encabezado del index -->
@@ -47,105 +57,94 @@
     <!-- contenedor con menus -->
     
     <i id="bars" class="fas fa-bars text-muted ms-1 mt-1 btn btn-info"></i>
+
+    <aside class=" bg-warning rounded mt-1 ms-1 p-2" >
+    
+       <div >
+        <div class="mt-5 ms-3" id="panel_administrador" >
+           
+            <h5 > <i class="fas fa-tools me-3"></i>Administracion</h5>
+                <div class="sub_menu ms-2" >
+                    <ul class="lista_menu" >
+                        <li > <a href="">Usuarios</a>
+                        </li>
+                        <li> <a href="">Permisos</a>
+                        </li>
+                        <li> <a href="">Reportes</a>
+                        </li>
+                        <li> <a href="">Crear Ganador</a>
+                        </li>
+                    </ul>
+    
+                </div>
+        </div>
+
+
+
+        <div class="mt-5 ms-3" id="panel_usuario" >
+            <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
+                <div class="sub_menu ms-2">
+                    <ul class="lista_menu">
+                        <li> <a href="">Perfil</a>
+                        </li>
+                        <li> <a href="">Como Jugar</a>
+                        </li>
+                        <li> <a href="">Resultados</a>
+                        </li>
+                        <!-- <li > <a href="">disabled</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+ 
+        </div>
+
+        <div class="mt-5 ms-3" id="panel_distribuidor" >
+            <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
+                <div class="sub_menu ms-2">
+                    <ul class="lista_menu">
+                        <li> <a href="">Perfil</a>
+                        </li>
+                        <li> <a href="">Como Jugar</a>
+                        </li>
+                        <li> <a href="">Resultados</a>
+                        </li>
+                        <!-- <li > <a href="">disabled</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+
+        </div>
+       </div>
+
+
+
+    </aside>
    
-    <div class="container-fluid prueba">
+    <div class="container-fluid prueba d-flex justify-content-center">
 
-        <main class="row h-100">
-       
-            <aside class="col-lg-2 col-sm-4 cold-md-3 bg-warning rounded mt-3" >
-    
-                <div class="mt-5 ms-3" id="panel_administrador" >
-                   
-                    <h5> <i class="fas fa-tools me-3"></i>Administracion</h5>
-                        <div class="sub_menu ms-4">
-                            <ul class="lista_menu" >
-                                <li > <a href="">Usuarios</a>
-                                </li>
-                                <li> <a href="">Permisos</a>
-                                </li>
-                                <li> <a href="">Reportes</a>
-                                </li>
-                                <li> <a href="">Crear Ganador</a>
-                                </li>
-                            </ul>
+
+        <main class="container row h-100 d-flex justify-content-center align-items-center">
+            <div class="h-75 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center" >
+                <h1 class="display-4 bg-warning text-danger rounded">Aca revisa el Ulitmo sorteo</h1>
+                <iframe class="w-100 h-75 rounded" src="https://www.youtube.com/embed/LP0KOnrOzvM" frameborder="0"></iframe>
+
+                <a class="btn btn-danger text-white " href="">Jugar Ahora</a>
+
+            </div>    
             
-                        </div>
-                </div>
-    
-    
-        
-                <div class="mt-5 ms-3" id="panel_usuario" >
-                    <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
-                        <div class="sub_menu ms-4">
-                            <ul class="lista_menu">
-                                <li> <a href="">Perfil</a>
-                                </li>
-                                <li> <a href="">Como Jugar</a>
-                                </li>
-                                <li> <a href="">Resultados</a>
-                                </li>
-                                <!-- <li > <a href="">disabled</a>
-                                </li> -->
-                            </ul>
-        
-                        </div>
-         
-                </div>
-        
-                <div class="mt-5 ms-3" id="panel_distribuidor" >
-                    <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
-                        <div class="sub_menu ms-4">
-                            <ul class="lista_menu">
-                                <li> <a href="">Perfil</a>
-                                </li>
-                                <li> <a href="">Como Jugar</a>
-                                </li>
-                                <li> <a href="">Resultados</a>
-                                </li>
-                                <!-- <li > <a href="">disabled</a>
-                                </li> -->
-                            </ul>
-    
-                        </div>
-        
-                </div>
-        
-        
-        
-            </aside>
-
-          
-              
                 
-                    <div class=" col"></div>
-
-                    <div class="col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center mt-3">
-                        <h1 class="display-4 bg-warning text-danger rounded">Aca revisa el Ulitmo sorteo</h1>
-                        <iframe class="w-100 h-75 rounded" src="https://www.youtube.com/embed/LP0KOnrOzvM" frameborder="0"></iframe>
-
-                        <a class="btn btn-danger text-white btn-lg " href="">Jugar Ahora</a>
-        
-                    </div>
-
-                    <div class=" col"></div>
-
-               
-
-           
-    
         </main>
-
-        
-           
-
-       
 
     </div>
 
+    <footer class="container-fluid d-flex bg-primary">
+        <div class="container text-center text-dark " >
+            <span> Powered by Alt-C</span>
+        </div>
 
-		<!--pie de pagina -->
-        
-            <p class="text-muted text-center mt-3"> Powered by Alt-C  &copy;2021</p>
+    </footer>
 		
 
 	
@@ -157,7 +156,7 @@
 	<!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-    <script src="/js/main.js"></script>
+    <script src="../js/main.js"></script>
 	
 </body>
 </html>
