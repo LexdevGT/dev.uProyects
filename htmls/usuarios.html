@@ -61,12 +61,12 @@
     <aside class=" bg-warning rounded mt-1 ms-1 p-2" >
     
        <div >
-        <div class="mt-5 ms-3" id="panel_administrador" >
+        <div class="mt-5 mx-4" id="panel_administrador " >
            
             <h5 > <i class="fas fa-tools me-3"></i>Administracion</h5>
                 <div class="sub_menu ms-2" >
                     <ul class="lista_menu" >
-                        <li > <a href="../htmls/usuarios.html">Usuarios</a>
+                        <li  > <a class="text-dark"  href="">Usuarios</a>
                         </li>
                         <li> <a href="">Permisos</a>
                         </li>
@@ -80,8 +80,8 @@
         </div>
 
 
-
-        <div class="mt-5 ms-3" id="panel_usuario" >
+<!-- oculto para el administrador -->
+        <div class="mt-5 ms-3 d-none" id="panel_usuario" >
             <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -99,7 +99,7 @@
  
         </div>
 
-        <div class="mt-5 ms-3" id="panel_distribuidor" >
+        <div class="mt-5 ms-3 d-none" id="panel_distribuidor" >
             <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -116,6 +116,8 @@
                 </div>
 
         </div>
+
+        <!-- fin de oculto para el administrador -->
        </div>
 
 
@@ -124,14 +126,59 @@
    
     <div class="container-fluid prueba d-flex justify-content-center">
 
-
+        
         <main class="container row h-100 d-flex justify-content-center align-items-center">
             <div class="h-75 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center" >
-                <h1 class="display-4 bg-warning text-danger rounded">Aca revisa el Ulitmo sorteo</h1>
-                <iframe class="w-100 h-75 rounded" src="https://www.youtube.com/embed/LP0KOnrOzvM" frameborder="0"></iframe>
+            
+                    <div class="text-end">
+                        <span class="text-warning">Crear Nuevo</span><a href="../htmls/crearusuario.html" class="fas fa-user-plus fs-1 mx-2 my-2"></a>
+                    </div>
+                    <div class="table-responsive table-responsive-md table-responsive-sm " >
+                      <table class="table table-hover table-borderless align-middle table-xs text-white" >
+                        
+                        <thead class="text-white bg-primary">
+                          <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Correo Electronico</th>
+                                <th>Acciones</th>
+                                <!-- <th></th> -->
+                          </tr>
+                        </thead>
+                            
+                        <tbody class="text-white">
+                            <tr >
+                                <th scope="row">1</th>
+                                <td>Raul</td>
+                                <td>Alvarez</td>
+                                <td>ma@googlemail.com</td>
+                                <td > 
+                                    <a href="" class="fas fa-user-edit mx-2"></a> 
+                                    <a href="" class="fas fa-flag mx-2"></a>
+                                    <a href="" class="fas fa-trash-alt mx-2"></a>
+                                </td>
+                            </tr>
 
-                <a class="btn btn-danger text-white " href="">Jugar Ahora</a>
 
+                          <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td >..</td>
+                            <td>...</td>
+                          </tr>
+                          <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td >..</td>
+                            <td>...</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                
+            
             </div>    
             
                 

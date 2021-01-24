@@ -27,6 +27,15 @@ header{
     /* border: 1px solid red; */
 }
 
+.fas{
+    text-decoration: none;
+    color: #09203f;
+}
+
+.fas:hover{
+    color: #000;
+}
+
 aside{
     /* width: auto; */
     position: absolute;
@@ -74,6 +83,9 @@ footer{
         
     } */
 
+   .table-xs{
+       width:200px ;
+   }
 
     .justify-content-xs-center{
         
@@ -101,3 +113,7 @@ footer{
             width: auto;
         }
     } */
+
+
+
+    

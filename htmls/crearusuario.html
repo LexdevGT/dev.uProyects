@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<!-- Libreria JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    
+
+    <!-- font awesome -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+	<!-- font ubuntu -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">	
+
+	<!-- css -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/accordion.css">
+
+ 
+    <title>Loto Super 4</title>
+    
+    
+</head>
+<body>
+
+	<!-- inicia encabezado del index -->
+
+	<header class="container-fluid bg-warning ">
+		<div class="row h-100" >
+			<div class="h-100 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-md-start  justify-content-xs-center d-xs-logo  " >
+				<img class="h-75  rounded" src="../imgs/logo.jpg"  alt="">
+			</div>
+
+			<!-- <div class="col-lg-6 col-md-6 col-sm-6 d-xs d-flex align-items-center justify-content-end ">
+				<div class="btn-xs">
+					<a class="btn btn-success " href="htmls/login.html">Ingresar</a>
+				</div>
+				<div class="ms-3 btn-xs">
+					<a class="btn btn-danger text-white" href="htmls/signup.html">Registrarse</a>
+				</div>
+
+			</div> -->
+
+		</div>
+
+
+
+
+	</header>
+	<!-- finaliza encabezado del index -->
+
+    <!-- contenedor con menus -->
+    
+    <i id="bars" class="fas fa-bars text-muted ms-1 mt-1 btn btn-info"></i>
+
+    <aside class=" bg-warning rounded mt-1 ms-1 p-2" >
+    
+       <div >
+        <div class="mt-5 mx-4" id="panel_administrador " >
+           
+            <h5 > <i class="fas fa-tools me-3"></i>Administracion</h5>
+                <div class="sub_menu ms-2" >
+                    <ul class="lista_menu" >
+                        <li  > <a class="text-dark"  href="">Usuarios</a>
+                        </li>
+                        <li> <a href="">Permisos</a>
+                        </li>
+                        <li> <a href="">Reportes</a>
+                        </li>
+                        <li> <a href="">Crear Ganador</a>
+                        </li>
+                    </ul>
+    
+                </div>
+        </div>
+
+
+<!-- oculto para el administrador -->
+        <div class="mt-5 ms-3 d-none" id="panel_usuario" >
+            <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
+                <div class="sub_menu ms-2">
+                    <ul class="lista_menu">
+                        <li> <a href="">Perfil</a>
+                        </li>
+                        <li> <a href="">Como Jugar</a>
+                        </li>
+                        <li> <a href="">Resultados</a>
+                        </li>
+                        <!-- <li > <a href="">disabled</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+ 
+        </div>
+
+        <div class="mt-5 ms-3 d-none" id="panel_distribuidor" >
+            <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
+                <div class="sub_menu ms-2">
+                    <ul class="lista_menu">
+                        <li> <a href="">Registrar Venta</a>
+                        </li>
+                        <li> <a href="">Reportes</a>
+                        </li>
+                        <!-- <li> <a href="">Resultados</a>
+                        </li> -->
+                        <!-- <li > <a href="">disabled</a>
+                        </li> -->
+                    </ul>
+
+                </div>
+
+        </div>
+
+        <!-- fin de oculto para el administrador -->
+       </div>
+
+
+
+    </aside>
+   
+    <div class="container-fluid prueba d-flex justify-content-center">
+
+        
+        <main class="container row h-100 d-flex justify-content-center ">
+            <div class="h-100 mt-2 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center overflow-auto" >
+            
+                <!-- formularios de creacion -->
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="fas fa-user-cog fs-2 mx-2"></i> Crear nuevo administrador
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form action="" id="formulario_administrador">
+                                <input type="text" class="form-control my-2" placeholder="Nombre">
+                                <input type="text" class="form-control my-2" placeholder="Apellido">
+                                <input type="text" class="form-control my-2" placeholder="Numero de Telefono">
+                                <input type="text" class="form-control my-2 " placeholder="Correo Electronico">
+                                <input type="text" class="form-control my-2" placeholder="CUI">
+                                <input type="text" class="form-control my-2" placeholder="Usuario">
+                                <input type="text" class="form-control my-2" placeholder="Contraseña">
+                                <a class="btn btn-warning" href="">Crear</a>
+
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <i class="fas fa-user fs-2 ms-2 me-4"></i>  Crear nuevo jugador
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form action="" id="formulario_administrador">
+                                <input type="text" class="form-control my-2" placeholder="Nombre">
+                                <input type="text" class="form-control my-2" placeholder="Apellido">
+                                <input type="text" class="form-control my-2" placeholder="Numero de Telefono">
+                                <input type="text" class="form-control my-2 " placeholder="Correo Electronico">
+                                <input type="text" class="form-control my-2" placeholder="CUI">
+                                <input type="text" class="form-control my-2" placeholder="NIT">
+                                <input type="text" class="form-control my-2" placeholder="Usuario">
+                                <input type="text" class="form-control my-2" placeholder="Contraseña">
+                                <a class="btn btn-warning" href="">Crear</a>
+
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <i class="fas fa-users fs-2 ms-2 me-3"></i> Crear nuevo Distribuidor
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form action="" id="formulario_administrador">
+                                    <input type="text" class="form-control my-2" placeholder="Nombre de Tienda">
+                                    <input type="text" class="form-control my-2" placeholder="Ubicacion">
+                                    <input type="text" class="form-control my-2" placeholder="Numero de Telefono">
+                                    <input type="text" class="form-control my-2 " placeholder="Correo Electronico">
+                                    <!-- <input type="text" class="form-control my-2" placeholder="RTU"> -->
+                                    <input type="text" class="form-control my-2" placeholder="NIT">
+                                    <input type="text" class="form-control my-2" placeholder="Usuario">
+                                    <input type="text" class="form-control my-2" placeholder="Contraseña">
+                                    <a class="btn btn-warning" href="">Crear</a>
+
+                            </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            
+            </div>    
+            
+                
+        </main>
+
+    </div>
+
+    <footer class="container-fluid d-flex bg-primary">
+        <div class="container text-center text-dark " >
+            <span> Powered by Alt-C</span>
+        </div>
+
+    </footer>
+		
+
+	
+
+	
+
+
+
+	<!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+	
+</body>
+</html>

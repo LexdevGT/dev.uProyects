@@ -1,3 +1,5 @@
+
+// funcion abrir slide de los menus 
 $(function(){
     abrirMenu()
     
@@ -10,4 +12,5 @@ function abrirMenu(){
     })
 
 }
+
 
