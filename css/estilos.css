@@ -25,6 +25,7 @@ header{
     height: 85%;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     /* border: 1px solid red; */
+    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
 }
 
 .fas{
@@ -71,6 +72,16 @@ aside{
     
 }
 
+/* numero ganador */
+.input_number{
+    width: 9.5rem;
+    height: 9.5rem;
+    box-shadow:5px 5px 8px 5px rgba(3, 3, 3, .3);
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+
+
+
 footer{
     height: 5%;
 }
@@ -82,6 +93,10 @@ footer{
         width: 60%;
         
     } */
+
+   th, td{
+       font-size: .9rem;
+   }
 
    .table-xs{
        width:200px ;
@@ -100,20 +115,16 @@ footer{
         width: 70%;
      }
 
+    .input_number{
+        width: 4rem;
+        height: 4rem;
     }
-/* 
+
+    }
+
     @media (min-width: 576px) and (max-width: 767px){
-        aside{
-            width: 40%;
+        .input_number{
+            width: 6rem;
+            height: 6rem;
         }
     }
-
-    @media (min-width: 768px) and (max-width: 1023px){
-        aside{
-            width: auto;
-        }
-    } */
-
-
-
-    

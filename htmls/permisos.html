@@ -10,6 +10,9 @@
 	<!-- Libreria JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+    
+
     <!-- font awesome -->
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +22,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">	
 
 	<!-- css -->
-	<link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/accordion.css">
 
  
     <title>Loto Super 4</title>
@@ -61,14 +65,14 @@
     <aside class=" bg-warning rounded mt-1 ms-1 p-2" >
     
        <div >
-        <div class="mt-5 ms-3" id="panel_administrador" >
+        <div class="mt-5 mx-4" id="panel_administrador " >
            
             <h5 > <i class="fas fa-tools me-3"></i>Administracion</h5>
                 <div class="sub_menu ms-2" >
                     <ul class="lista_menu" >
-                        <li > <a href="../htmls/usuarios.html">Usuarios</a>
+                        <li  > <a href="../htmls/usuarios.html">Usuarios</a>
                         </li>
-                        <li> <a href="../htmls/permisos.html">Permisos</a>
+                        <li> <a class="text-dark" href="../htmls/permisos.html">Permisos</a>
                         </li>
                         <li> <a href="../htmls/reportesadmin.html">Reportes</a>
                         </li>
@@ -80,8 +84,8 @@
         </div>
 
 
-
-        <div class="mt-5 ms-3" id="panel_usuario" >
+<!-- oculto para el administrador -->
+        <div class="mt-5 ms-3 d-none" id="panel_usuario" >
             <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -99,7 +103,7 @@
  
         </div>
 
-        <div class="mt-5 ms-3" id="panel_distribuidor" >
+        <div class="mt-5 ms-3 d-none" id="panel_distribuidor" >
             <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -116,6 +120,8 @@
                 </div>
 
         </div>
+
+        <!-- fin de oculto para el administrador -->
        </div>
 
 
@@ -124,14 +130,53 @@
    
     <div class="container-fluid prueba d-flex justify-content-center">
 
+        
+        <main class="container row h-100 d-flex justify-content-center ">
+            <div class="h-75 mt-2 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center overflow-auto " >
+            
+                <!-- contenido de los permisos -->
 
-        <main class="container row h-100 d-flex justify-content-center align-items-center">
-            <div class="h-75 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center" >
-                <h1 class="display-4 bg-warning text-danger rounded">Aca revisa el Ulitmo sorteo</h1>
-                <iframe class="w-100 h-75 rounded" src="https://www.youtube.com/embed/LP0KOnrOzvM" frameborder="0"></iframe>
+               <form action="" class="row">
+                   <div class="col-lg-3 col-md-6 col-sm-12">
 
-                <a class="btn btn-danger text-white " href="">Jugar Ahora</a>
+                    <select name="usuarios" id="permisos_usuarios" class="form-select form-select-sm mt-5 mb-5 bg-primary">
+                        <option selected >Selecione un usuario </option>
+                        <option value="1">correo1@mail.com</option>
+                        <option value="2">correo2@mail.com</option>
+                        <option value="3">...</option>
+                    </select>
 
+                   </div>
+
+
+               </form>
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 mb-1">
+                      <h3 class="text-white fs-3 bg-primary rounded">Con acceso a:</h3>
+                      <ul class="todo list-group">
+                        <li class="btn list-group-item list-group-item-action">Administrador</li>
+                        <li class="btn list-group-item list-group-item-action">Distribuidor</li>
+                        <li class="btn list-group-item list-group-item-action">Jugador</li>
+                        <!-- <li class="btn list-group-item list-group-item-action">Permiso 4</li>
+                        <li class="btn list-group-item list-group-item-action">Permiso 5</li>
+                        <li class="btn list-group-item list-group-item-action">Permiso 6</li> -->
+                        
+                      </ul>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12">
+                      <h3 class="text-white fs-3 bg-primary rounded">Sin acceso a:</h3>
+                      <ul class="done list-group">
+                       
+                      </ul>
+                    </div>
+                
+                </div>
+
+            
+                
+            
             </div>    
             
                 

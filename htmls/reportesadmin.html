@@ -10,6 +10,9 @@
 	<!-- Libreria JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+
+    
+
     <!-- font awesome -->
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +22,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">	
 
 	<!-- css -->
-	<link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/accordion.css">
 
  
     <title>Loto Super 4</title>
@@ -61,18 +65,18 @@
     <aside class=" bg-warning rounded mt-1 ms-1 p-2" >
     
        <div >
-        <div class="mt-5 ms-3" id="panel_administrador" >
+        <div class="mt-5 mx-4" id="panel_administrador " >
            
             <h5 > <i class="fas fa-tools me-3"></i>Administracion</h5>
                 <div class="sub_menu ms-2" >
                     <ul class="lista_menu" >
-                        <li > <a href="../htmls/usuarios.html">Usuarios</a>
+                        <li  > <a href="../htmls/usuarios.html">Usuarios</a>
                         </li>
-                        <li> <a href="../htmls/permisos.html">Permisos</a>
+                        <li> <a  href="../htmls/permisos.html">Permisos</a>
                         </li>
-                        <li> <a href="../htmls/reportesadmin.html">Reportes</a>
+                        <li> <a class="text-dark" href="../htmls/reportesadmin.html">Reportes</a>
                         </li>
-                        <li> <a href="../htmls/crearganador.html">Numero Ganador</a>
+                        <li> <a  href="../htmls/crearganador.html">Numero Ganador</a>
                         </li>
                     </ul>
     
@@ -80,8 +84,8 @@
         </div>
 
 
-
-        <div class="mt-5 ms-3" id="panel_usuario" >
+<!-- oculto para el administrador -->
+        <div class="mt-5 ms-3 d-none" id="panel_usuario" >
             <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -99,7 +103,7 @@
  
         </div>
 
-        <div class="mt-5 ms-3" id="panel_distribuidor" >
+        <div class="mt-5 ms-3 d-none" id="panel_distribuidor" >
             <h5> <i class="fas fa-users me-3"></i>Distribuidor</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
@@ -116,26 +120,18 @@
                 </div>
 
         </div>
+
+        <!-- fin de oculto para el administrador -->
        </div>
 
 
 
     </aside>
    
-    <div class="container-fluid prueba d-flex justify-content-center">
+    <div class="container-fluid prueba ">
 
-
-        <main class="container row h-100 d-flex justify-content-center align-items-center">
-            <div class="h-75 col-lg-8  col-md-12 col-sm-12 col-xs-12 text-center" >
-                <h1 class="display-4 bg-warning text-danger rounded">Aca revisa el Ulitmo sorteo</h1>
-                <iframe class="w-100 h-75 rounded" src="https://www.youtube.com/embed/LP0KOnrOzvM" frameborder="0"></iframe>
-
-                <a class="btn btn-danger text-white " href="">Jugar Ahora</a>
-
-            </div>    
-            
-                
-        </main>
+       <!-- aca van los reportes  -->
+        
 
     </div>
 
