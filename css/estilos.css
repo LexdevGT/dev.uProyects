@@ -21,11 +21,11 @@ header{
     height: 10%;
 }
 
+
 .prueba{
     height: 85%;
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    /* border: 1px solid red; */
-    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
+   
 }
 
 .fas{
@@ -57,6 +57,9 @@ aside{
 
 
 
+
+
+
 .lista_menu a{
     text-decoration: none;
     color: rgb(94, 94, 94);
@@ -82,17 +85,28 @@ aside{
 
 
 
-footer{
+ footer{
     height: 5%;
-}
+} 
 
 
-@media (max-width: 575px){
+
+
+/* modificando contenido de los cartones  */
+
+
+
+
+
+
+@media only screen and (max-width: 575px){
     
     /* aside{
         width: 60%;
         
     } */
+
+  
 
    th, td{
        font-size: .9rem;
@@ -118,13 +132,23 @@ footer{
     .input_number{
         width: 4rem;
         height: 4rem;
+        
+    
     }
 
+    
+
+  
     }
 
-    @media (min-width: 576px) and (max-width: 767px){
+    @media only screen and (min-width: 576px) and (max-width:992px){
         .input_number{
             width: 6rem;
             height: 6rem;
         }
+
+       
     }
+    
+
+    
