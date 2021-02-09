@@ -25,9 +25,6 @@ var numbersSelected=[]
 
 function mySelection(){
 
-   
-    
-    
     $('.carton').on('click', ".cartonItem", function () {
      
         
@@ -53,39 +50,14 @@ function mySelection(){
 
     //append del los numeros elegidos 
 
-    
-
     for(let i= 0;i<numbersSelected.length;i++){
 
         let post = [...numbersSelected].sort((a,b)=>a-b)
         
         $( `.${i}`).text(post[i])
     }
-       
-       
-       
-
-        
-      
-
-    // if(numbersSelected.length == 4){
-    //     sorted.forEach(function(content){
-    //         let lotto = document.getElementById("result")
-    //         let circle = document.createElement('div')
-    //         circle.classList.add('circle', 'p-3');
-    //         circle.textContent = content
-    //         lotto.append(circle)
-    //     })
-       
-    // }else if(document.getElementsByClassName('circle').length) {
-    //     const removeElements = (elms) => elms.forEach(el => el.remove());
-    //     removeElements( document.querySelectorAll(".circle") );
-    // }
     
-
     console.log(numbersSelected)
-
-
 
     })
 }//funcion myselection
