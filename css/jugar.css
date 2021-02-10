@@ -7,43 +7,21 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100vh;
-    /* border: 1px solid black; */
-}
 
-body{
-    height: 100%;
-    /* border: 1px solid red; */
-}
 
 header{
-    height: 10%;
+    height: 75px;
 }
 
 /* probando con jugar.html para ver responsivnes en mobile  */
-.prueba{
-    height: 85%;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    
-    position: relative;
-    
-    /* estilos originales arriba  */
- 
 
-
-
-    /* background-image: linear-gradient(to right bottom, #957bed, #8b75e4, #816fdc, #776ad3, #6d64cb, #645cc7, #5b55c3, #524dbf, #4641be, #3a35bd, #2b27bb, #1717b9); */
-    /* background-image: linear-gradient(to right bottom, #b3daeb, #a6d9ed, #98d9ef, #88d8f1, #76d8f2, #5dcff1, #3fc5f0, #06bbef, #00a5eb, #008de2, #3673d3, #5757be);    border: 1px solid red; */
-    /* background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%); */
-}
 
 
 
 #pagar{
-    position: absolute;
+    position: fixed;
     right: 5%;
-    bottom: 1%;
+    bottom: 5%;
 }
 
 .fas{
@@ -104,7 +82,9 @@ aside{
 
 
  footer{
-    height: 5%;
+   position:fixed;
+   bottom: 0;
+   width: 100%;
 } 
 
 
@@ -121,10 +101,10 @@ aside{
     justify-content: space-evenly;
 }
 
-.cartones:hover{
+.hover:hover{
     box-shadow: -1px 5px 5px 5px rgba(5, 5, 5, 0.2);
-    transition: transform .3s;
-    transform: scale(1.1);
+    transition: transform .5s;
+    transform: scale(.9);
 }
 
 .carton_nuevo:hover{
@@ -162,10 +142,7 @@ aside{
 
 @media only screen and (max-width: 575px){
     
-    /* aside{
-        width: 60%;
-        
-    } */
+  
 
   
 
@@ -190,19 +167,15 @@ aside{
         width: 70%;
      }
 
-    .input_number{
-        width: 4rem;
-        height: 4rem;
-        
     
-    }
 
     .carton_nuevo{
-        margin-bottom: 25%;
+        width: 50%;
+        margin-bottom: 50px;
     }
 
     .cartones{
-        width: 80%;
+        
     
         margin-top: 1rem;
 
@@ -212,16 +185,10 @@ aside{
 
   
 
-  .prueba{
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
+  
 
   #pagar{
-      right: 50%;
-      left: 50%;
+      border-top: 5%;
   }
 
  
@@ -250,24 +217,13 @@ aside{
     }
 
     @media only screen and (min-width: 576px) and (max-width:992px){
-        .input_number{
-            width: 6rem;
-            height: 6rem;
-        }
+       
 
-        .prueba{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            height: 85%;
-        }
+        
 
         .cartones{
-            margin-top: 1.5rem;
-            height: fit-content;
-             width: 44%;
-             margin-bottom: 10%;
+         
+            margin: 1rem 0;
             
         }
 
@@ -310,11 +266,12 @@ aside{
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 85%;
+            /* height: 85%; */
         }
 
-        .cartones{
+        .hover{
             /* margin-top: 1.5rem; */
+            transform: scale(.7);
             transition: transform .5s;
              width: 300px;
             
