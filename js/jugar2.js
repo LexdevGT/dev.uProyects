@@ -3,6 +3,7 @@ $(function(){
     cartonUno()
     mySelection()
     agregarCarton()
+    
 
 })
 
@@ -13,7 +14,7 @@ function cartonUno(){
     
     while(balls <= 63){
        
-        let cartonItem = $('#carton1').append(`<div id="${balls}"> ${balls} </div>`).find('div:last').addClass("rounded-circle"+" " +"cartonItem"+" "+'bg-unselected'+" "+ "d-flex"+" "+ "align-items-center"+" "+ " justify-content-center").attr(`id, ${balls}`)
+        $('#carton1').append(`<div id="${balls}"> ${balls} </div>`).find('div:last').addClass("rounded-circle"+" " +"cartonItem"+" "+'bg-unselected'+" "+ "d-flex"+" "+ "align-items-center"+" "+ " justify-content-center").attr(`id, ${balls}`)
        
         balls++
     } 
@@ -65,12 +66,14 @@ function mySelection(){
 
 function agregarCarton(){
 
-
+  
     let  i = 2 //contara el numero de cartones por agregar hasta 10
+    
 
     $('.carton_nuevo').click( function(){
 
-      
+        
+
         if(i<=10){
             let CartonNumero        = `<div class="carton${i} hover"> </div>`//father
             let cartonEncabezado    = `<h3 class="text-center bg-warning rounded ">Carton ${i}</h3>`//hijo 1 encabezado
@@ -94,30 +97,84 @@ function agregarCarton(){
 
 
             let resultadoItem = 0
-
+            // let resultBox = `${i}${resultadoItem}`;
             while(resultadoItem <4){
-                $(`#resultado${i}`).append(`<div class="${i}${resultadoItem} circle p-2" ></div>`) //aca sera posible agrear una clase especial par identificar el div que contendra el numero selecionado
+                $(`#resultado${i}`).append(`<div class="carton${i}${resultadoItem} circle p-2" ></div>`) //aca sera posible agrear una clase especial par identificar el div que contendra el numero selecionado
 
                 resultadoItem ++
             }
-
-
+            myselection2()
+          
+         
+            var numbersSelected2 = [];
             
+            function myselection2(){
+                
+                $(`#carton${i}`).on('click', ".cartonItem", function(e){
+                    
+                    let resultBox = e.delegateTarget.id;
+                    console.log(resultBox)
+                    var aa = $(this)
+                                if( !aa.is('.bg-selected' )&& numbersSelected2.length<4 ){
+                                    aa.addClass('bg-selected');
+                                        var my_id=this.id;
+                                        
+                                        numbersSelected2.push(my_id);
+                                    
+                                    
+                                } else {
+                                
+                                    aa.removeClass('bg-selected');
+                                    var my_id=this.id;
+                                    var index = numbersSelected2.indexOf(my_id);
+                                    if (index > -1) {
+                                    numbersSelected2.splice(index, 1);
+                                    }
+                                }
+                                //APPEND EN RESULTADO
+                                for(let i= 0;i<numbersSelected2.length;i++){
+
+                                    let post2 = [...numbersSelected2].sort((a,b)=>a-b)
+                                    
+                                    console.log(` lo que necesito ${resultBox}${i}`)
+                                    $( `.${resultBox}${i}`).text(post2[i])
+                                }
+                               
+                                console.log(numbersSelected2)
+                })
+
+                
+               
+            }
+
             
             
             i++
-            console.log(i)
+            
+            // console.log(i)
+           
+
         }else{
             alert('Has llegado al maximo numero de cartones')
         }
+
+        
+        
       
-            
+       
+
         
 
     }) // click
-
-
+    
+     
+ 
 }//funcion agregar carton
+
+
+//selecionar numeros en cartones nuevos 
+
+
 
 
 
