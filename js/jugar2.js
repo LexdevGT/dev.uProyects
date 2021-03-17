@@ -3,9 +3,18 @@ $(function(){
     cartonUno()
     mySelection()
     agregarCarton()
+    payment() 
     
 
 })
+
+function payment(){
+    $('#tarjetaForm').hide()
+    $('#sendContact').click(function(){
+        $('#paymentForm').addClass('d-none')
+        $('#tarjetaForm').fadeIn(1000)
+    })
+}
 
 // creador del carton uno 
 

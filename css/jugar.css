@@ -15,7 +15,14 @@ header{
 
 /* probando con jugar.html para ver responsivnes en mobile  */
 
-
+.iconos-cc{
+    background-image: url(../imgs/visamaster.png);
+    background-position:center ;
+    background-size: cover;
+    width: 100px;
+    height: 35px;
+    
+}
 
 
 #pagar{
@@ -139,6 +146,10 @@ aside{
     color: #ffe100;
     /* background-image: radial-gradient(circle, #f0eabe, #efe4a8, #eedd93, #eed67d, #eecf66, #efc857, #f0c148, #f2ba38, #f4b32e, #f5ab23, #f7a317, #f99b09); */
     /* background-image: linear-gradient(to right bottom, #d1215e, #d10071, #cc0087, #bf00a0, #a800bb, #9f20c6, #9531d2, #883edc, #9a54d9, #a869d6, #b47ed3, #be93d1); */
+}
+
+.lista-tips{
+    list-style: none;
 }
 
 
