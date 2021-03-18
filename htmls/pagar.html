@@ -92,11 +92,11 @@
                     <ul class="lista_menu">
                         <li> <a class="text-dark" href="jugar.html">Jugar</a>
                         </li>
-                        <li> <a href="">Como Jugar</a>
+                        <li> <a href="comojugar.html">Como Jugar</a>
                         </li>
                         <li> <a href="">Resultados</a>
                         </li>
-                        <li > <a href="">Perfil</a>
+                        <li > <a href="perfil.html">Perfil</a>
                         </li>
                     </ul>
 
@@ -131,34 +131,34 @@
    
     <main class="container mt-5">
        <div class="row">
-            <div id="orden" class="col-12 col-xl-4 text-white border border-2">
+            <div id="orden" class="col-12 col-xl-4 col-md-6 text-white border border-2 rounded">
                 aca podria aparecer los numero escogidos y la cantidad de cartones junto con el 
                 <hr>
                 <span> TOTAL Q 00.00</span>
             </div>
 
-            <div id="paymentForm" class="col-12 col-xl-4 d-flex flex-column text-white">
+            <div id="paymentForm" class="col-12 col-xl-4 col-md-6 d-flex flex-column text-white">
 
                     <label for="name" class="form-label mt-1">Nombre</label>
-                    <input title="Ingresa tu Nombre" required type="text"  class="form-control" placeholder="Ingresa tu nombre*">
+                    <input data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresa tu Nombre" required type="text"  class="form-control" placeholder="Ingresa tu nombre*">
                     <br>
                     <label for="lastName" class="form-label mt-1">Apellido</label>
-                    <input title="Ingresa tu apellido" required type="text"  class="form-control" placeholder="Ingresa tu apellido*">
+                    <input data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresa tu apellido" required type="text"  class="form-control" placeholder="Ingresa tu apellido*">
                     <br>
                     <label for="email" class="form-label mt-1">Correo Electronico</label>
-                    <input title="Ingresa tu email" required type="email" class="form-control" placeholder="correo electronico*">
+                    <input data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresa tu email" required type="email" class="form-control" placeholder="correo electronico*">
                     <br>
                     <label for="nit" class="form-label mt-1">Nit</label>
-                    <input title="Ingresa tu NIT" required type="text" class="form-control" placeholder="Nit*">
+                    <input data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresa tu NIT" required type="text" class="form-control" placeholder="Nit*">
                     <br>
                     <label for="phone" class="form-label mt-1">Telefono</label>
-                    <input title="Ingresa tu numero de telefono" required type="text" class="form-control"  placeholder="Cel, casa u oficina*">
+                    <input data-bs-toggle="tooltip" data-bs-placement="top" title="Ingresa tu numero de telefono" required type="text" class="form-control"  placeholder="Cel, casa u oficina*">
 
-                    <a id="sendContact" title="Click para continuar " href="#" class="btn btn-warning mt-2"> Siguiente </a>
+                    <a id="sendContact" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para continuar " href="#" class="btn btn-warning mt-2"> Siguiente </a>
 
             </div>
 
-            <div id="tarjetaForm" class="col-12 col-xl-4 text-white datos-tarjeta ">
+            <div id="tarjetaForm" class="col-12 col-xl-4 col-md-6 text-white datos-tarjeta ">
                 <!-- logo de las tarjetas  -->
                 <div class="iconos-cc">
                 </div>
@@ -244,7 +244,7 @@
 
             
 
-            <div id="tipSeguridad" class="col-12 col-xl-4 " >
+            <div id="tipSeguridad" class="col-12 col-xl-4 col-md-12 " >
 
                     <ul class="lista-tips d-flex flex-column justify-content-center">
                         <li class=" p-2 text-white"> <i class="fas fa-check text-success fs-4"></i> No use computadoras publicas</li>

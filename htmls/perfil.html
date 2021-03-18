@@ -30,7 +30,7 @@
     
     
 </head>
-<body class=" bg-dark" >
+<body class=" bg-dark h-100" >
 
 	<!-- inicia encabezado del index -->
 
@@ -90,13 +90,13 @@
             <h5> <i class="fas fa-user me-3"></i>Jugador</h5>
                 <div class="sub_menu ms-2">
                     <ul class="lista_menu">
-                        <li> <a class="text-dark" href="">Jugar</a>
+                        <li> <a  href="jugar.html">Jugar</a>
                         </li>
-                        <li> <a href="comojugar.html">Como Jugar</a>
+                        <li> <a  href="comojugar.html">Como Jugar</a>
                         </li>
                         <li> <a href="">Resultados</a>
                         </li>
-                        <li > <a href="perfil.html">Perfil</a>
+                        <li > <a class="text-dark" href="perfil.html">Perfil</a>
                         </li>
                     </ul>
 
@@ -129,73 +129,77 @@
 
     </aside>
    
-    <div class="  d-flex align-items-center justify-content-center flex-wrap justify-content-xs-center"> 
+    <!-- contenido  -->
+
+    <main class="container mt-2 mb-5 h-75 position-relative">
         
-          
-                        <!-- cartones              -->
-                    <div class="cartones d-flex  flex-wrap align-items-center justify-content-center justify-content-md-evenly justify-content-sm-evenly"> <!--carton uno  -->
-                        <div class="carton1 hover">
-                                
-                                <!-- carton encabezado -->
-                                <h3 class="text-center bg-warning rounded ">Carton 1</h3>
-                                
-                                
-                                <div class="carton  border border-1 pt-1 pb-1 rounded" id="carton1"></div> 
-                               
-                                
-                                    <div class="d-flex justify-content-evenly p-2" id="result">
-                                        <div class="0 circle p-2"></div>
-                                        <div class="1 circle p-2"></div>
-                                        <div class="2 circle p-2"></div>
-                                        <div class="3 circle p-2"></div>
-                                        
-                                    </div>
-                               
-
-                        </div>
-                    </div>
-    
-                    
-                  
-                       
-                    
-                    
-                    
-                    <!-- agregar carton  -->
-                    <div class="carton_nuevo  bg-danger rounded ms-1 p-3    m-2">
-                        <h3 class=" text-center text-warning mt-3">Aumenta tu suerte</h3>
-                            <div class=" text-center">
-                                <i class="fas fa-plus-circle display-1 text-primary "></i>
-                            </div>
-                        <div class="text-center text-white">
-                            <span>agregar cartones</span>
-                        </div>
-                        
-                    </div>
+        <div class="row text-white">
             
+             
 
-
+                <div class="mt-5 col-12 col-md-6 col-xl-4" >
+                    <span class="fs-4 text-white">Configuracion del Perfil</span> <br>
+                    <small class="text-white">Cualquier cambio que hagas se aplicará a tu cuenta Lotto Super 4</small> <br>
+                    <label class="form-label text-muted" for="name">Nombre</label>
+                    <input class="form-control" type="text" placeholder="nombre">
                    
-
-    </div> 
-            
-            <div id="pagar" class="d-flex justify-content-evenly align-items-center">
-                        
-                        <a class="btn btn-warning text-dark p-1 m-1 fw-bold" href="pagar.html">Proceder a pago</a>
-                        <i class="far fa-credit-card text-white fs-1"></i>
-            </div>
-                    
+                    <label class="form-label text-muted" for="apellido">Apellido</label>
+                    <input class="form-control" type="text" placeholder="apellido">
+                </div>
 
                 
 
-      
+                 
+                             
+         </div>
 
-    <footer class=" bg-primary">
-        <div class="container text-center text-dark " >
-            <span> Powered by Alt-C</span>
+         <div class="row text-white mt-3">
+            <div class="col-12 col-md-6 col-xl-4" >
+                <span class="fs-4 text-white">Configuracion de la cuenta</span> <br>
+                <label class="form-label text-muted" for="usuario">Nombre de usuario</label>
+                <input class="form-control" type="text" placeholder="Nombre de usuario">
+
+                <label class="form-label text-muted" for="correo">Correo electronico</label>
+                <input class="form-control" type="text" placeholder="Correo electronico">
+
+            </div>         
+         </div>
+
+         <div class="row text-white mt-3 ">
+            <div class=" mb-2 col-12 col-md-6 col-xl-4" >
+                <span class="fs-4 text-white">Cambiar contraseña</span> <br>
+                <label class="form-label text-muted" for="nuevaContraseña">Nueva contraseña</label>
+                <input class="form-control" type="password" placeholder="nueva contraseña">
+
+                <label class="form-label text-muted" for="repetirContraseña">Repetir contraseña</label>
+                <input class="form-control" type="password" placeholder="repetir contraseña">
+
+                <label class="form-label text-muted" for="actualContraseña">Contraseña actual</label>
+                <input class="form-control" type="password" placeholder="nueva contraseña"> 
+            </div>
+
+         </div>
+
+         <div class="text-end ">
+            <a href="#" id="guardarPerfil" class="btn btn-warning btn-sm">
+                Guardar Cambios
+            </a>
         </div>
 
-    </footer>
+    </main>
+
+    
+   <!-- fin contenido  -->                  
+    
+
+    
+ <footer>
+    <div class="container-fluid bg-primary text-center text-dark " >
+        <span> Powered by Alt-C</span>
+    </div>
+ </footer>       
+
+    
 		
 
 	
