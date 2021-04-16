@@ -1,111 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 	<!-- Libreria JQUERY -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    
+
+    <!-- font awesome -->
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
 	<!-- font ubuntu -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">	
 
 	<!-- css -->
-	<link rel="stylesheet" href="../css/signup_estilos.css">
+    <!-- <link rel="stylesheet" href="../css/jugar.css"> -->
+    <link rel="stylesheet" href="../css/signup_estilos.css">
+    
 
-    <title>Login Super Loto 4</title>
+ 
+    <title>Loto Super 4</title>
+    
+    
 </head>
-<body id="bg-img" class="d-flex justify-content-center align-items-center position-relative">
+<body  id="bg-img" >
+
+	<!-- inicia encabezado del index -->
+
+	<header class="container-fluid ">
+		<div class="row h-100" >
+			<div class="h-100 col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-md-start  justify-content-xs-center d-xs-logo  " >
+				<img class="h-75  rounded " src="../imgs/logo.jpg"  alt="">
+			</div>
+
+			<!-- <div class="col-lg-6 col-md-6 col-sm-6 d-xs d-flex align-items-center justify-content-end ">
+				<div class="btn-xs">
+					<a class="btn btn-success " href="htmls/login.html">Ingresar</a>
+				</div>
+				<div class="ms-3 btn-xs">
+					<a class="btn btn-danger text-white" href="htmls/signup.html">Registrarse</a>
+				</div>
+
+			</div> -->
+
+		</div>
+
+
+
+
+	</header>
+	<!-- finaliza encabezado del index -->
+
    
-    <!-- logotipo -->
+   
+    <!-- contenido  -->
 
-    <img class="position-absolute top-0 start-0 m-3 rounded img-media" src="../imgs/logo.jpg"  alt="">
-
-    <!-- contenedor del signup  -->
-    <div class="container-signup rounded  ">
-        <h5 class="text-warning text-center  mt-3">BIENVENIDO</h5>
-
-        <div class="m-1 row"> 
-            <div class="col col-lg-6 col-md-6 col-sm-6 ">
-                <input class="bg-info text-white rounded form-control" type="text" placeholder="Nombre">
+    <main class="d-flex justify-content-center align-items-center">
+        <div class="container-signup rounded  ">
+            <h5 class="text-warning text-center  mt-3">BIENVENIDO</h5>
+    
+            <div class="m-1 row"> 
+                <div class="col col-lg-6 col-md-6 col-sm-6 ">
+                    <input class="bg-info text-white rounded form-control" type="text" placeholder="Nombre">
+                </div>
+    
+                <div class="col col-lg-6 col-md-6 col-sm-6 ">
+                    <input class="bg-info text-white rounded form-control" type="text" placeholder="Apellido">
+                </div>
             </div>
-
-            <div class="col col-lg-6 col-md-6 col-sm-6 ">
+    
+            <!-- <div class="m-3 row"> 
                 <input class="bg-info text-white rounded form-control" type="text" placeholder="Apellido">
+            </div> -->
+    
+            <div class="m-3 row"> 
+                <input class="bg-info text-white rounded form-control" type="text" placeholder="Correo Electronico">
             </div>
-        </div>
-
-        <!-- <div class="m-3 row"> 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="Apellido">
-        </div> -->
-
-        <div class="m-3 row"> 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="Correo Electronico">
-        </div>
-
-        <div class="m-3 row"> 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="Numero de Telefono">
-        </div>
-
-        <div class="m-1 row " > 
-             <div class="col-md-6 col">
-                <input class="bg-info text-white rounded form-control " type="text" placeholder="CUI (DPI)">  
-             </div>
-             
-            <div class="col-md-6 col">
-                <input class="bg-info text-white rounded form-control" type="text" placeholder="NIT">
+    
+            <div class="m-3 row"> 
+                <input class="bg-info text-white rounded form-control" type="text" placeholder="Numero de Telefono">
             </div>
-           
-        </div>
-
-        
-        <!-- <div class="m-3 row" > 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="NIT">      
+    
+            <div class="m-1 row " > 
+                 <div class="col-md-6 col">
+                    <input class="bg-info text-white rounded form-control " type="text" placeholder="CUI (DPI)">  
+                 </div>
+                 
+                <div class="col-md-6 col">
+                    <input class="bg-info text-white rounded form-control" type="text" placeholder="NIT">
+                </div>
+               
+            </div>
+    
+            
+            <!-- <div class="m-3 row" > 
+                <input class="bg-info text-white rounded form-control" type="text" placeholder="NIT">      
+              
+           </div> -->
+    
+           <div class="m-3 row " > 
+                <select name="pais" id="pais" class="w-100 rounded form-select  bg-info text-white">
+                    <option  selected>--Selecciona un pais--</option>
+                    <option  value="cat">Guatemala</option>
+                    <option  value="cat">El Salvador</option>
+                    <option  value="hamster">Honduras</option>
+                    <option  value="parrot">Nicaragua</option>
+                    <option  value="dog">Guatemal</option>
+                    <option  value="spider">Costa Rica</option>
+                    <option  value="goldfish">Panama</option>
+                    
+                </select>
           
-       </div> -->
+             </div>
+    
+    
+    
+    
+            <div class="m-3 row"> 
+                <input class="bg-info text-white rounded form-control" type="text" placeholder="Usuario">
+            </div>
+    
+            <div class="m-3 row"> 
+                <input class="bg-info text-white rounded form-control" type="text" placeholder="Contraseña">
+            </div>
+            
+            <div class="m-3  text-end" >
+                <!-- <a href="" class="text-muted"><i>Olvide mi Contraseña</i></a> -->
+                <a href="login.html" class="btn btn-info btn-sm text-white ms-2">Registrarse</a>
+            </div>
+    
+        </div>
+       
 
-       <div class="m-3 row " > 
-            <select name="pais" id="pais" class="w-100 rounded form-select  bg-info text-white">
-                <option  selected>--Selecciona un pais--</option>
-                <option  value="cat">Guatemala</option>
-                <option  value="cat">El Salvador</option>
-                <option  value="hamster">Honduras</option>
-                <option  value="parrot">Nicaragua</option>
-                <option  value="dog">Guatemal</option>
-                <option  value="spider">Costa Rica</option>
-                <option  value="goldfish">Panama</option>
-                
-            </select>
-      
-         </div>
+    </main>
+   <!-- fin contenido  -->                  
+    
 
-
-
-
-        <div class="m-3 row"> 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="Usuario">
+    <footer class=" bg-primary">
+        <div class="container text-center text-dark " >
+            <span> Powered by Alt-C</span>
         </div>
 
-        <div class="m-3 row"> 
-            <input class="bg-info text-white rounded form-control" type="text" placeholder="Contraseña">
-        </div>
-        
-        <div class="m-3  text-end" >
-            <!-- <a href="" class="text-muted"><i>Olvide mi Contraseña</i></a> -->
-            <a href="..//htmls/login.html" class="btn btn-info btn-sm text-white ms-2">Registrarse</a>
-        </div>
+    </footer>
+		
 
-    </div>
+	
 
-    <footer class="w-100 bg-primary position-absolute bottom-0 start-0  rounded">
-        <p class="text-center text-dark">Powered by Alt-C</p>
-     </footer>
+	
 
-    <!-- Bootstrap Bundle with Popper -->
+
+
+	<!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script src="../js/main.js"></script>
+    <!-- <script src="../js/jugar.js"></script> -->
+    <script src="../js/jugar2.js"></script>
+	
 </body>
 </html>

@@ -1,10 +1,42 @@
 /* estilos del login  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+}
+
+header{
+    height: 75px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main{
+    height: calc(100%-75px);
+    /* border: 1px solid red; */
+    height: 85%;
+}
+
 #bg-img{
    
-    height: 100vh;
+    /* height: 100vh; */
     background-image: url(../imgs/bglogisignup.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     
     
 }
