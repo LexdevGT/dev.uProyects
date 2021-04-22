@@ -7,12 +7,23 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+}
+
 
 
 header{
-    height: 75px;
+    height: 15%;
 }
 
+.jugar-contenido{
+    height: 85%;
+}
 
 
 /* probando con jugar.html para ver responsivnes en mobile  */
@@ -92,6 +103,7 @@ aside{
 
 
  footer{
+   height: 5%;  
    position:fixed;
    bottom: 0;
    width: 100%;

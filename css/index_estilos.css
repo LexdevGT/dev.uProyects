@@ -17,14 +17,14 @@ body{
 }
 
 header{
-    height: 10%;
+    height: 15%;
 }
 
 
 
 .carousel{
     /* border: solid green 3px; */
-    height: 85%;
+    height: 80%;
 }
 
 .carousel-inner{

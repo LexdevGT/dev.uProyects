@@ -15,19 +15,19 @@ body{
 }
 
 header{
-    height: 75px;
+    height: 15%;
 }
 
 footer{
+    height: 5%;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 main{
-    height: calc(100%-75px);
-    /* border: 1px solid red; */
-    height: 85%;
+    
+    height: 80%;
 }
 
 #bg-img{

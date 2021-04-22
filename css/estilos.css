@@ -18,12 +18,13 @@ body{
 }
 
 header{
-    height: 10%;
+    height: 15%;
 }
 
 
 .prueba{
-    height: 85%;
+    height: 80%;
+    overflow: auto;
     /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
    
 }
@@ -87,6 +88,8 @@ aside{
 
  footer{
     height: 5%;
+    position: fixed;
+    bottom: 0;
 } 
 
 

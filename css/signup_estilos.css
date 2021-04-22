@@ -13,10 +13,12 @@ body{
 }
 
 header{
-    height: 75px;
+    height: 15%;
 }
 
 footer{
+
+    height: 5%;
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -24,7 +26,7 @@ footer{
 
 main{
     /* border: solid 1px red; */
-    height: 85%;
+    height: 80%;
 }
 
 
@@ -50,7 +52,7 @@ main{
     /* height: 50vh; */
     box-shadow: 1px 6px 6px 3px rgba(35,47,62,.8);
     font-weight: 300;
-    width: 25%;
+    /* width: 25%; */
 }
 
 
